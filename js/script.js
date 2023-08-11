@@ -193,12 +193,12 @@ function scrooll_to_section(direction){
             // console.log('секція четверта, кільця відповідно до неї');
             circles[0].style = 'left: '+(50-25)+'%;'+
             ' top: '+(circle_height_koef * 100)/2*(-1)+'%;'+
-            ' height: '+(window.innerHeight * circle_height_koef)+'px;'+
+            ' height: '+(window.innerHeight * circle_height_koef/1.15)+'px;'+
             ' width: '+(window.innerWidth * 0.5)+'px';
 
             circles[1].style = 'left: '+(50-((1 - circle_height_koef + 0.3)*50))+'%;'+
             ' top: '+(circle_height_koef * 100)/2*(-1)+'%;'+
-            ' height: '+(window.innerHeight * circle_height_koef)+'px;'+
+            ' height: '+(window.innerHeight * circle_height_koef/1.15)+'px;'+
             ' width: '+(window.innerWidth * (1 - circle_height_koef + 0.3))+'px';
 
             menu_buttons[1].style = menu_buttons[1].style.cssText + active_button_css;
